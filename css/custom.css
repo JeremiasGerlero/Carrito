@@ -1,0 +1,239 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #2d3748; /* Fondo gris oscuro */
+    color: white; /* Todo el texto en blanco */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header {
+    padding: 20px 0 0 0;
+    background-color: #2d3748; /* Fondo gris oscuro en el header */
+    color: white; /* Texto blanco en el header */
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+}
+
+#encabezado {
+    margin: 30px 0;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.contenido-hero {
+    margin-top: 80px;
+    color: white;
+}
+
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.barra {
+    padding: 20px 0;
+    background: #741d51; /* Old browsers */
+    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #741d51 0%, #e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endColorstr='#e44e52', GradientType=1); /* IE6-9 */
+}
+
+.barra p {
+    margin: 0;
+    color: white;
+}
+
+.icono {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    .icono {
+        margin-bottom: 0;
+    }
+}
+
+.icono1 {
+    background-image: url(../img/icono1.png);
+}
+
+.icono2 {
+    background-image: url(../img/icono2.png);
+}
+
+.icono3 {
+    background-image: url(../img/icono3.png);
+}
+
+#lista-cursos .row {
+    margin-bottom: 20px;
+}
+
+.agregar-carrito {
+    margin: 10px 0;
+    background-color: #e44e52; /* Fondo del botón */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center; /* Asegura que el texto sea centrado horizontalmente */
+    font-weight: bold;
+    display: flex; /* Cambiado a flex */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    height: 40px; /* Establece una altura fija para el botón */
+}
+
+.agregar-carrito:hover {
+    background-color: #741d51; /* Fondo al pasar el mouse */
+}
+
+
+/* Cambios en las tarjetas de productos */
+.card {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: #2d3748; /* Fondo gris oscuro para las cajas de productos */
+    color: white; /* Color de texto blanco dentro de las tarjetas */
+    height: 450px; /* Altura fija para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Esto hace que el contenido se distribuya de manera uniforme */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 550px) {
+    .card {
+        text-align: left;
+    }
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 200px; /* Limita la altura de las imágenes para que no sobrepasen el tamaño de la tarjeta */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse ni distorsionarse */
+}
+
+.info-card {
+    padding: 10px 20px;
+    flex-grow: 1; /* Esto asegura que el contenido dentro de la tarjeta ocupe el espacio disponible */
+}
+
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+
+.info-card .precio {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.info-card .precio span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.footer {
+    margin-top: 40px;
+    border-top: 1px solid #aaa;
+    padding-top: 40px;
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
